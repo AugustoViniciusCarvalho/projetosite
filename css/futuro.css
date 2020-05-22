@@ -2,13 +2,19 @@ html{
     max-width: 100%;
 }
 
+body{
+    background-color: #dfe3ee ;
+}
+
 #navbar{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-family: 'Crimson Text', serif;
+    padding-right: 1%;
     height: 20%;
     width: 100%;
+    background-color: #b6b7b0;
 }
 
 #imagemlogo{
@@ -23,7 +29,8 @@ a{
 
 #link1,#link2,#link3,#link4,#link5,#link6,#link7{
     margin-top: 3.5%;
-    font-size: 95%;
+    font-size: 100%;
+    height: 1%;
 }
 
 img{
@@ -35,16 +42,26 @@ img{
     height: 45%;
     width: 45%;
     margin-left: 27.5%;
+    margin-top: 2%;
 }
 
-.grow { 
-    transition: all .2s ease-in-out; 
+.grow1{ 
+    transition: all .2s ease-in-out;
     }
+
+.grow2{
+    transition: all .2s ease-in-out;
+}
     
-.grow:hover { 
-    transform: scale(1.1);
+.grow1:hover { 
     text-decoration: none;
-    }
+    background-color: #3b5998;
+    color: white;
+}
+
+.grow2:hover {
+    transform: scale(1.1);
+}
 
     .fadein {
         -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
