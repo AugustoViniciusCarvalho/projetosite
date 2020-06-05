@@ -1,24 +1,3 @@
-function teste(e){
-    console.log(localStorage.setItem("e", e.target.id));
-    window.location.href="artistasinfo.html"
-}
-
-window.onload = console.log(localStorage.getItem("t"));
-
-let t = localStorage.getItem("t");
-
-if (t == "diretor"){
-    $("div.diretor").show();
-    $("div.ator").hide();
-    $("div.dramaturgo").hide();
-}else if(t == "ator"){
-    $("div.diretor").hide();
-    $("div.ator").show();
-    $("div.dramaturgo").hide();
-}else if(t == "dramaturgo"){
-
-}
-
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }

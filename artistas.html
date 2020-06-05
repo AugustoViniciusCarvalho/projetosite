@@ -14,9 +14,15 @@
 
 <body class="fadein">
     <div id="navbar">
-        <img src="imagens/logo.png" alt="Logo" id="imagemlogo">
-        <a href="index.html" id="link1" class="grow1">HOME</a>
-        <a href="artistas.html" id="link2" class="grow1">ARTISTAS</a>
+        <a href="index.html" id="link1" class="grow2"><img src="imagens/logo.png" alt="Logo" id="imagemlogo"></a>
+            <div class="dropdown">
+                <p onclick="myFunction()" class="dropbtn" class="grow1">ARTISTAS</p>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#" onclick="tipo(event)" id="diretor">DIRETOR</a>
+                    <a href="#" onclick="tipo(event)" id="ator">ATOR</a>
+                    <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGO</a>
+                </div>
+            </div>
         <a href="dramaturgia.html" id="link3" class="grow1">DRAMATURGIA</a>
         <a href="futuro.html" id="link4" class="grow1">GRUPOS</a>
         <a href="futuro.html" id="link5" class="grow1">GALERIA</a>
@@ -25,28 +31,28 @@
     </div>
 
     <div id="artistas">
-        <span class="grow2" onclick="teste(event)">
-            <div id="timmaia">
-                <img src="imagens/tim.png" alt="Tim Maia" id="tim">
-                <p id="titulotim">Tim Maia</p>
+        <span class="grow2">
+            <div id="timmaia" class="diretor">
+                <img src="imagens/tim.png" alt="Tim Maia" id="tim" onclick="teste(event)">
+                <p class="titulotim" id="tim" onclick="teste(event)">Tim Maia</p>
             </div>
         </span>
-        <span class="grow2" onclick="teste(event)">
-            <div id="arnaldobaptista">
-                <img src="imagens/arnaldo.png" alt="Arnaldo Baptista" id="arnaldo">
-                <p id="tituloarnaldo">Arnaldo Baptista</p>
+        <span class="grow2">
+            <div id="arnaldobaptista" class="ator">
+                <img src="imagens/arnaldo.png" alt="Arnaldo Baptista" id="arnaldo" onclick="teste(event)">
+                <p class="tituloarnaldo" id="arnaldo" onclick="teste(event)">Arnaldo Baptista</p>
             </div>
         </span>
-        <span class="grow2" onclick="teste(event)">
-            <div id="ritalee">
-                <img src="imagens/rita.png" alt="Rita Lee" id="rita">
-                <p id="tituloritalee">Rita Lee</p>
+        <span class="grow2">
+            <div id="ritalee" class="ator">
+                <img src="imagens/rita.png" alt="Rita Lee" id="rita" onclick="teste(event)">
+                <p class="tituloritalee" id="rita" onclick="teste(event)">Rita Lee</p>
             </div>
         </span>
-        <span class="grow2" onclick="teste(event)">
-            <div id="alesater">
-                <img src="imagens/ale.png" alt="Ale Sater" id="ale">
-                <p id="tituloale">Ale Sater</p>
+        <span class="grow2">
+            <div id="alesater" class="ator">
+                <img src="imagens/ale.png" alt="Ale Sater" id="ale" onclick="teste(event)">
+                <p class="tituloale" id="ale" onclick="teste(event)">Ale Sater</p>
             </div>
         </span>
     </div>
@@ -59,6 +65,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.js"></script>
     <script src="js/artistas.js"></script>
 
 </body>
