@@ -14,9 +14,15 @@
 
 <body class="fadein">
     <div id="navbar">
-        <img src="imagens/logo.png" alt="Logo" id="imagemlogo">
-        <a href="index.html" id="link1" class="grow1">HOME</a>
-        <a href="artistas.html" id="link2" class="grow1">ARTISTAS</a>
+        <a href="index.html" id="link1" class="grow2"><img src="imagens/logo.png" alt="Logo" id="imagemlogo"></a>
+            <div class="dropdown">
+                <p onclick="myFunction()" class="dropbtn" class="grow1">ARTISTAS</p>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#" onclick="tipo(event)" id="diretor">DIRETOR</a>
+                    <a href="#" onclick="tipo(event)" id="ator">ATOR</a>
+                    <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGO</a>
+                </div>
+            </div>
         <a href="dramaturgia.html" id="link3" class="grow1">DRAMATURGIA</a>
         <a href="futuro.html" id="link4" class="grow1">GRUPOS</a>
         <a href="futuro.html" id="link5" class="grow1">GALERIA</a>
