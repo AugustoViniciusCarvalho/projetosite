@@ -8,21 +8,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/dramaturgia.css">
+    <link rel="stylesheet" href="css/dramaturgiainfo.css">
     <link rel="icon" href="imagens/favicon.ico">
 </head>
 
 <body class="fadein">
     <div id="navbar">
         <a href="index.html" id="link1" class="grow2"><img src="imagens/logo.png" alt="Logo" id="imagemlogo"></a>
-            <div class="dropdown">
-                <p onclick="myFunction()" class="dropbtn" class="grow1">ARTISTAS</p>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#" onclick="tipo(event)" id="diretor">DIRETOR</a>
-                    <a href="#" onclick="tipo(event)" id="ator">ATOR</a>
-                    <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGO</a>
-                </div>
+        <div class="dropdown">
+            <p onclick="myFunction()" class="dropbtn" class="grow1">ARTISTAS</p>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#" onclick="tipo(event)" id="diretor">DIRETOR</a>
+                <a href="#" onclick="tipo(event)" id="ator">ATOR</a>
+                <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGO</a>
             </div>
+        </div>
         <a href="dramaturgia.html" id="link3" class="grow1">DRAMATURGIA</a>
         <a href="futuro.html" id="link4" class="grow1">GRUPOS</a>
         <a href="futuro.html" id="link5" class="grow1">GALERIA</a>
@@ -30,29 +30,14 @@
         <a href="futuro.html" id="link7" class="grow1">SOBRE NÓS</a>
     </div>
 
-    <div id="pesquisar">
-    <input type="text" id="input" onkeyup="pesquisar()" placeholder="Pesquisar Obra">
+    <div id="info">
+        <img src="" alt="" id="imagem">
+        <embed id="texto" src="">
+    </div>
 
-    <ul id="textos">
-        <li id="oSenhorDosAneis" class="grow2">
-            <div>
-                <img src="imagens/capasenhordosaneis.png" alt="" id="oSenhorDosAneis" onclick="info(event)">
-                <p id="oSenhorDosAneis" onclick="info(event)">O Senhor dos Anéis</p>
-            </div>
-        </li>
-        <li>
-            <div>Yara</div>
-        </li>
-        <li>
-            <div>Emily</div>
-        </li>
-        <li>
-            <div>Ícaro</div>
-        </li>
-        <li>
-            <div>Simon</div>
-        </li>
-    </ul>
+    <div id="completo">
+        <img src="imagens/Documento_botao.png" alt="" id="imagemcompleta" class="grow2" onclick="lerCompleto()">
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -63,8 +48,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="js/dramaturgia.js"></script>
-    </div>
+    <script src="js/dramaturgiainfo.js"></script>
 </body>
-
-</html>

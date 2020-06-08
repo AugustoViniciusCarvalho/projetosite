@@ -1,19 +1,13 @@
-function pesquisar() {
-    var input, filtro, ul, li, a, i, texto;
-    input = document.getElementById("input");
-    filtro = input.value.toUpperCase();
-    ul = document.getElementById("textos");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("div")[0];
-        texto = a.textContent || a.innerText;
-        if (texto.toUpperCase().indexOf(filtro) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
+window.onload = console.log(localStorage.getItem("e"));
+
+let e = localStorage.getItem("e");
+
+let texto = document.getElementById("texto");
+let imagem = document.getElementById("imagem");
+imagem.src = `imagens/${e}hd.png`;
+texto.src=`textos/${e}.txt`;
+
+console.log(e);
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
@@ -38,7 +32,6 @@ function myFunction() {
     window.location.href="artistas.html"
 }
 
-function info(e){
-  console.log(localStorage.setItem("e", e.target.id));
-  window.location.href="dramaturgiainfo.html"
+function lerCompleto(){
+  window.location.href="https://drive.google.com/file/d/1q0eMAjkWWn3lB5pMWU8sfS33psEnPrzn/view"
 }
