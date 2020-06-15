@@ -43,22 +43,29 @@ img{
 }
 
 #input{
-    margin-left: 5%;
-}
-
-#textos{
-    margin-left: 3%;
-    margin-top: 3%;
-    list-style-type: none;
-}
-
-#oSenhorDosAneis{
-    width: 144px;
-    text-align: center;
+    margin-left: 5.7%;
 }
 
 #pesquisar{
     margin-top: 2%;
+}
+
+#itens{
+    width: 144px;
+    margin-left: 4%;
+    margin-top: 2%;
+    list-style-type: none;
+    text-align: center;
+}
+
+#flexbox{
+    margin: 2%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .grow1{ 
