@@ -4,8 +4,8 @@ let e = localStorage.getItem("e");
 
 let texto = document.getElementById("texto");
 let imagem = document.getElementById("imagem");
-imagem.src = `imagens/${e}hd.png`;
-texto.src=`textos/${e}.txt`;
+imagem.src = `Artistas Imagens/${e}.png`;
+texto.src=`Artistas textos/${e}.txt`;
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");

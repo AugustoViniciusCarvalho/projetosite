@@ -7,7 +7,11 @@ window.onload = console.log(localStorage.getItem("t"));
 
 let t = localStorage.getItem("t");
 
-if (t == "diretor"){
+if (t == "todos"){
+  $("div.diretor").show();
+  $("div.ator").show();
+  $("div.dramaturgo").show();
+}else if (t == "diretor"){
     $("div.diretor").show();
     $("div.ator").hide();
     $("div.dramaturgo").hide();
@@ -16,6 +20,9 @@ if (t == "diretor"){
     $("div.ator").show();
     $("div.dramaturgo").hide();
 }else if(t == "dramaturgo"){
+  $("div.diretor").hide();
+  $("div.ator").hide();
+  $("div.dramaturgo").show();
 
 }
 

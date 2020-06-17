@@ -65,12 +65,18 @@ img{
     margin-top: 3%;
 }
 
-#timmaia,#arnaldobaptista,#ritalee,#alesater{
+.artistadiv{
     margin-left: 5%;
     width: 144px;
 }
 
-.titulotim, .tituloarnaldo, .tituloritalee, .tituloale{
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.tituloartista{
     margin-top: 1%;
     color: black;
     width: 144px;
