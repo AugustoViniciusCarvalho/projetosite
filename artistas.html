@@ -15,14 +15,14 @@
 <body class="fadein">
     <div id="navbar">
         <a href="index.html" id="link1" class="grow2"><img src="imagens/logo.png" alt="Logo" id="imagemlogo"></a>
-            <div class="dropdown">
-                <p onclick="myFunction()" class="dropbtn" class="grow1">ARTISTAS</p>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#" onclick="tipo(event)" id="diretor">DIRETOR</a>
-                    <a href="#" onclick="tipo(event)" id="ator">ATOR</a>
-                    <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGO</a>
-                </div>
+        <div class="dropdown">
+            <p onclick="myFunction()" class="dropbtn" class="grow1">ARTISTAS</p>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#" onclick="tipo(event)" id="diretor">DIRETOR</a>
+                <a href="#" onclick="tipo(event)" id="ator">ATOR</a>
+                <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGO</a>
             </div>
+        </div>
         <a href="dramaturgia.html" id="link3" class="grow1">DRAMATURGIA</a>
         <a href="futuro.html" id="link4" class="grow1">GRUPOS</a>
         <a href="futuro.html" id="link5" class="grow1">GALERIA</a>
@@ -30,32 +30,32 @@
         <a href="futuro.html" id="link7" class="grow1">SOBRE NÓS</a>
     </div>
 
-    <div id="artistas" class="flex-container">
-        <span class="grow2">
+    <div id="artistas">
+        <span class="grow2 espaco ator" id="grimario">
             <div id="grimario" class="ator grow2 artistadiv">
                 <img src="Artistas Imagens/grimario.png" alt="Grimário Farias" id="grimario" onclick="info(event)">
                 <p class="tituloartista" id="grimario" onclick="info(event)">Grimário Farias</p>
             </div>
         </span>
-        <span class="grow2">
+        <span class="grow2 espaco ator" id="ivonete">
             <div id="ivonete" class="ator grow2 artistadiv">
                 <img src="Artistas Imagens/ivonete.png" alt="Ivonete Albano" id="ivonete" onclick="info(event)">
                 <p class="tituloartista" id="ivonete" onclick="info(event)">Ivonete Albano</p>
             </div>
         </span>
-        <span class="grow2">
+        <span class="grow2 espaco diretor" id="lenilton">
             <div id="lenilton" class="diretor grow2 artistadiv">
                 <img src="Artistas Imagens/lenilton.png" alt="Lenilton Teixeira" id="lenilton" onclick="info(event)">
                 <p class="tituloartista" id="lenilton" onclick="info(event)">Lenilton Teixeira</p>
             </div>
         </span>
-        <span class="grow2">
+        <span class="grow2 espaco dramaturgo" id="racine">
             <div id="racine" class="dramaturgo grow2 artistadiv">
                 <img src="Artistas Imagens/racine.png" alt="Racine Santos" id="racine" onclick="info(event)">
                 <p class="tituloartista" id="racine" onclick="info(event)">Racine Santos</p>
             </div>
         </span>
-        <span class="grow2">
+        <span class="grow2 espaco dramaturgo" id="soniaothon">
             <div id="soniaothon" class="dramaturgo grow2 artistadiv">
                 <img src="Artistas Imagens/soniaothon.png" alt="Sônia Othon" id="soniaothon" onclick="info(event)">
                 <p class="tituloartista" id="soniaothon" onclick="info(event)">Sônia Othon</p>

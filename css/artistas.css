@@ -60,9 +60,14 @@ img{
 }
 
 #artistas{
-
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: flex-start;
     margin-top: 3%;
+}
+
+.dramaturgo, .ator, .diretor{
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
 .artistadiv{
