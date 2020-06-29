@@ -1,9 +1,7 @@
 window.onload = console.log(localStorage.getItem("i"));
 let i = localStorage.getItem("i");
 
-if (i == "leniltonteixeira"){
-    $("span").not(`.leniltonteixeira`).hide();
-}
+    $("span").not(`.${i}`).hide();
 
 
 
