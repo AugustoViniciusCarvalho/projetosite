@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria do artista</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/galeriadoartista.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/favicon.ico">
+</head>
+
+<body>
+
+    <body>
+        <div id="navbar">
+            <a href="index.html" id="link1" class="grow2"><img src="imagens/logo.png" alt="Logo" id="imagemlogo"></a>
+            <div class="dropdown">
+                <p onclick="myFunction()" class="dropbtn" class="grow1">ARTISTAS</p>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#" onclick="tipo(event)" id="todos">TODOS</a>
+                    <a href="#" onclick="tipo(event)" id="diretor">DIRETOR</a>
+                    <a href="#" onclick="tipo(event)" id="ator">ATOR</a>
+                    <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGO</a>
+                    <a href="#" onclick="tipo(event)" id="pesquisador">PESQUISADOR</a>
+                    <a href="#" onclick="tipo(event)" id="produtor">PRODUTOR</a>
+                </div>
+            </div>
+            <a href="dramaturgia.html" id="link3" class="grow1">DRAMATURGIA</a>
+            <a href="futuro.html" id="link4" class="grow1">GRUPOS</a>
+            <a href="galeria.html" id="link5" class="grow1">GALERIA</a>
+            <a href="futuro.html" id="link6" class="grow1">TEATROS</a>
+            <a href="futuro.html" id="link7" class="grow1">SOBRE NÓS</a>
+        </div>
+
+        <div id="imagens">
+            <span class="grow2 leniltonteixeira">
+                <img src="imagens/leniltonteixeira.png" alt="" class="imagens">
+            </span>
+            <span class="grow2 grimariofarias">
+                <img src="imagens/grimariofarias.png" alt="" class="imagens">
+            </span>
+            <span class="grow2 ivonetealbano">
+                <img src="imagens/ivonetealbano.png" alt="" class="imagens">
+            </span>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="js/galeriadoartista.js"></script>
+    </body>
+</html>

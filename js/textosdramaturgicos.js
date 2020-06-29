@@ -1,21 +1,24 @@
 window.onload = console.log(localStorage.getItem("e"));
-
 let e = localStorage.getItem("e");
 
-let botao = document.getElementsByClassName("botao")[0];
-let texto = document.getElementById("texto");
-let imagem = document.getElementById("imagem");
-let imgdemo1 = document.getElementById("imgdemo1");
-imgdemo1.src = `imagens/${e}.png`;
-imagem.src = `Artistas Imagens/${e}.png`;
-texto.src=`Artistas textos/${e}.txt`;
-botao.id = `${e}`;
-console.log(botao.id);
+if (e == "leniltonteixeira"){
+  $("li").not(".leniltonteixeira").hide();
+}
+
+function sumir(string){
+  for (let i = 0; i < $(string).length + 1; i++) {
+    for (let i = 0; i < $(string).length; i++) {
+      let id = $(string)[i].id;
+      let dramaturgo = document.getElementById(id);
+      dramaturgo.remove();
+    }
+  }
+}
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
-  
+
   // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
@@ -33,14 +36,6 @@ function myFunction() {
   function tipo(t){
     console.log(localStorage.setItem("t", t.target.id));
     window.location.href="artistas.html";
-}
+  }
 
-function textos(te){
-  console.log(localStorage.setItem("te", te.target.id));
-  window.location.href="textosdramaturgicos.html";
-}
-
-function vermais(i){
-  console.log(localStorage.setItem("i", i.target.id));
-  window.location.href="galeriadoartista.html";
-}
+  

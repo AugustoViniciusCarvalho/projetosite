@@ -18,14 +18,17 @@
         <div class="dropdown">
             <p onclick="myFunction()" class="dropbtn" class="grow1">ARTISTAS</p>
             <div id="myDropdown" class="dropdown-content">
+                <a href="#" onclick="tipo(event)" id="todos">TODOS</a>
                 <a href="#" onclick="tipo(event)" id="diretor">DIRETOR</a>
                 <a href="#" onclick="tipo(event)" id="ator">ATOR</a>
                 <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGO</a>
+                <a href="#" onclick="tipo(event)" id="pesquisador">PESQUISADOR</a>
+                <a href="#" onclick="tipo(event)" id="produtor">PRODUTOR</a>
             </div>
         </div>
         <a href="dramaturgia.html" id="link3" class="grow1">DRAMATURGIA</a>
         <a href="futuro.html" id="link4" class="grow1">GRUPOS</a>
-        <a href="futuro.html" id="link5" class="grow1">GALERIA</a>
+        <a href="galeria.html" id="link5" class="grow1">GALERIA</a>
         <a href="futuro.html" id="link6" class="grow1">TEATROS</a>
         <a href="futuro.html" id="link7" class="grow1">SOBRE NÓS</a>
     </div>
@@ -33,6 +36,18 @@
     <div id="info">
         <img src="" alt="" id="imagem">
         <embed id="texto" src="">
+    </div>
+
+    <div id="botao1">
+        <button onclick="textos(event)">Textos do artista</button>
+    </div>
+
+    <div id="imagens">
+        <img src="" alt="" id="imgdemo1">
+    </div>
+
+    <div id="botao2">
+        <button onclick="vermais(event)" class="botao">Ver mais</button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
