@@ -8,7 +8,7 @@ let imagem = document.getElementById("imagem");
 let imgdemo1 = document.getElementById("imgdemo1");
 imgdemo1.src = `imagens/${e}.png`;
 imagem.src = `Artistas Imagens/${e}.png`;
-texto.src=`Artistas textos/${e}.txt`;
+texto.data=`Artistas textos/${e}.txt`;
 botao.id = `${e}`;
 console.log(botao.id);
 
