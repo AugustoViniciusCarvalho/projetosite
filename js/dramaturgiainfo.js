@@ -5,7 +5,7 @@ let e = localStorage.getItem("e");
 let texto = document.getElementById("texto");
 let imagem = document.getElementById("imagem");
 imagem.src = `Obras Imagens/${e}.png`;
-texto.src = `Obras textos/${e}.txt`;
+texto.data = `Obras textos/${e}.txt`;
 
 function lerCompleto(){
   if (e == "aabelinhasonhadora"){
