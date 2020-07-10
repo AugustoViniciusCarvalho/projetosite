@@ -1,9 +1,8 @@
 window.onload = console.log(localStorage.getItem("e"));
 let e = localStorage.getItem("e");
 
-if (e == "leniltonteixeira"){
-  $("li").not(".leniltonteixeira").hide();
-}
+  $("li").not(`.${e}`).hide();
+
 
 function sumir(string){
   for (let i = 0; i < $(string).length + 1; i++) {
