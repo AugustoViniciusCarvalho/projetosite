@@ -8,38 +8,104 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
   <link rel="icon" href="imagens/favicon.ico">
 </head>
 
 <body class="fadein">
-  <div id="navbar">
-    <a href="index.html" id="link1" class="grow2"><img src="imagens/logo.png" alt="Logo" id="imagemlogo"></a>
-      <div class="dropdown">
-        <p onclick="myFunction()" class="dropbtn" class="grow1">ARTISTAS</p>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#" onclick="tipo(event)" id="todos">TODOS</a>
-          <a href="#" onclick="tipo(event)" id="diretor">DIRETOR</a>
-          <a href="#" onclick="tipo(event)" id="ator">ATOR</a>
-          <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGO</a>
-          <a href="#" onclick="tipo(event)" id="pesquisador">PESQUISADOR</a>
-          <a href="#" onclick="tipo(event)" id="produtor">PRODUTOR</a>
-        </div>
-      </div>
-    <a href="dramaturgia.html" id="link3" class="grow1">DRAMATURGIA</a>
-    <a href="futuro.html" id="link4" class="grow1">GRUPOS</a>
-    <a href="galeria.html" id="link5" class="grow1">GALERIA</a>
-    <a href="futuro.html" id="link6" class="grow1">TEATROS</a>
-    <a href="futuro.html" id="link7" class="grow1">SOBRE NÓS</a>
-  </div>
+  <div id="borda"></div>
   <div id="menu_img">
-          <img class="d-block w-100" src="imagens/menu.png" alt="First slide">
+    <div id="navbar">
+      <div id="logo">
+        <h1 id="logo1">
+          <br>
+          <a href="index.html" id="link1">HISTORIAR</a>
+          <br>
+          <br>
+        </h1>
+      </div>
+      <div id="menu">
+        <div class="dropdown">
+          <p onclick="myFunction()" class="dropbtn grow1">ARTISTAS</p>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#" onclick="tipo(event)" id="todos">TODOS</a>
+            <a href="#" onclick="tipo(event)" id="diretor">DIRETOR</a>
+            <a href="#" onclick="tipo(event)" id="ator">ATOR</a>
+            <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGO</a>
+            <a href="#" onclick="tipo(event)" id="pesquisador">PESQUISADOR</a>
+            <a href="#" onclick="tipo(event)" id="produtor">PRODUTOR</a>
+          </div>
+        </div>
+        <a href="dramaturgia.html" id="link3" class="grow1">DRAMATURGIA</a>
+        <a href="futuro.html" id="link4" class="grow1">GRUPOS</a>
+        <a href="galeria.html" id="link5" class="grow1">GALERIA</a>
+        <a href="futuro.html" id="link6" class="grow1">TEATROS</a>
+      </div>
+    </div>
+    <div id="tituloCentral">
+      <span>HISTÓRIA DO <br> TEATRO POTIGUAR</span>
+    </div>
   </div>
 
-  <div id="iconeyt" class="grow2">
-    <a href="https://www.youtube.com/?gl=BR">
-      <img src="imagens/iconeyt.png" alt="Ícone Youtube">
-    </a>
+  <div id="conteudo">
+    <div id="conteudoTitulo">
+      <h2 id="tituloh2">BIBLIOTECA VIRTUAL</h2>
+      <span>DE UM APANHADO HISTÓRICO SOBRE O TEATRO NO RIO GRANDE DO NORTE</span>
+    </div>
+    <div id="conteudoImagens">
+      <img src="./imagens/pic01.jpg" alt="">
+      <img src="./imagens/pic02.jpg" alt="">
+      <img src="./imagens/pic03.jpg" alt="">
+    </div>
+    <div id="conteudoColunas">
+      <div id="canalYoutube">
+        <h2 id="tituloCanalYoutube">ACESSE NOSSO CANAL NO YOUTUBE</h2>
+        <div class="conteudoArtistas">
+          <img src="imagens/Racine.png" alt="" id="imagem1">
+          <span id="conteudoRacine">Racine Santos</span>
+        </div>
+        <div class="conteudoArtistas">
+          <img src="imagens/ivonete.png" alt="" id="imagem2">
+          <span id="conteudoIvonete">Ivonete Albano</span>
+        </div>
+        <div class="conteudoArtistas">
+          <img src="imagens/othon.png" alt="" id="imagem3">
+          <span id="conteudoSonia">Sonia Othon</span>
+        </div>
+      </div>
+      <div id="datasImportantes">
+        <h2 id="tituloDatasImportantes">DATAS IMPORTANTES PARA SABER MAIS</h2>
+        <div class="datas">
+          <img src="imagens/data1.png" alt="" class="imagemData">
+          <div id="informacoes1">
+            <h3>Inauguração do Alberto Maranhão</h3>
+            <p><a href="#">Mais Informações</a></p>
+          </div>
+        </div>
+        <div class="datas">
+          <img src="imagens/data2.png" alt="" class="imagemData">
+          <div id="informacoes2">
+            <h3>ANIVERSÁRIO DE NEWTON NAVARRO</h3>
+            <p><a href="#">Mais Informações</a></p>
+          </div>
+        </div>
+      </div>
+      <div id="contatos">
+        <h2 id="tituloContatos">SIGAM NOSSAS REDES SOCIAIS</h2>
+        <div class="contatos">
+          <h3>@<a href="#">HistoriarIG</a></h3>
+          <h3>@<a href="#">RebekaCarozza</a></h3>
+          <h3>@<a href="#">Chaconbolinho</a></h3>
+          <h3>@<a href="#">Dicc.Galdino</a></h3>
+          <h3>@<a href="#">Gil_araujo</a></h3>
+        </div>
+      </div>
+    </div>
+    <div id="bemvindo">
+      <h1>BEM-VINDO AO NOSSO SITE</h1>
+      <p>Este site é fruto do projeto <strong>História do Teatro no Rio Grande do Norte: Uma Investigação Preliminar</strong>, que teve seu início no ano de 2019 no campus <a href="https://portal.ifrn.edu.br/campus/parnamirim" rel="nofollow">IFRN PARNAMIRIM</a>, com o objetido de tornar mais acessível a história do teatro norte-rio-grandense, disponibilizando à comunidade diversos documentos, realtos e obras sem quaisquer fins lucrativos.</p>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
