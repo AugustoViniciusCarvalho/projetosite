@@ -2,39 +2,101 @@ html{
     max-width: 100%;
 }
 
-body{
-    background-color: #dfe3ee ;
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #707070;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+	color: #000000;
 }
 
-#navbar{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-family: 'Crimson Text', serif;
-    padding-right: 1%;
-    height: 20%;
-    width: 100%;
-    background-color: #b71c1c;
+#header-wrapper
+{
+    background: url(Banner/banner.png) no-repeat center;
+    background-size: cover;
+	border-top: 10px solid #CC0000;
 }
 
-#link1{
-    width: 15%;
-    height: 20%;
-    margin-left: 1%;
+#header
+{
+	position: relative;
+	padding: 5em 0em;
 }
 
-a{
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
+.containerdrop
+{
+	margin: 0em auto;
+	width: 1000px;
 }
 
-#link2,#link3,#link4,#link5,#link6,#link7{
-    margin-top: 3.5%;
-    font-size: 100%;
-    height: 1%;
-    margin-left: 3%;
-    margin-right: 3%;
+#logo h1
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1em 1em;
+	background: #CC0000;
+	border-radius: 0px 0px 5px 5px;
+}
+
+#logo a
+{
+	text-decoration: none;
+	color: #1C1C1C;
+}
+
+#menu
+{
+	position: absolute;
+	top: 4em;
+	right: 0;
+}
+
+#menu ul
+{
+	display: inline-block;
+}
+
+#menu li
+{
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+#menu li a, #menu li span
+{
+	padding: 1em 1.5em;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.90em;
+	font-weight: 600;
+	color: #1C1C1C;
+}
+
+#menu li:hover a, #menu li.active a, #menu li.active span
+{
+	background: #CC0000;
+	border-radius: 5px;
+}
+
+#myDropdown{
+	z-index: 9999;
+	position: absolute;
+}
+
+#dropdown{
+	
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.90em;
+	font-weight: 600;
+	color: #1C1C1C;
 }
 
 img{
@@ -68,7 +130,6 @@ img{
     }
 
     .dropbtn {
-        background-color: #b71c1c;
         font-size: 16px;
         color: black;
         font-weight: bold;

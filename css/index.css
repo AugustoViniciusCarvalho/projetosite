@@ -1,246 +1,516 @@
-html{
-    max-width: 100%;
+
+html, body
+{
+	height: 100%;
 }
 
-body{
-    background-color: #202020;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12pt;
-    font-weight: 300;
-    color: #000000;
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #CC0000;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+	color: #000000;
 }
 
-#navbar{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-right: 1%;
-    height: 20%;
-    width: 100%;
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	color: white;
 }
 
-#tituloCentral{
-    text-align: center;
-    margin-top: 10%;
-    font-family: 'Notable', sans-serif;
-    font-size: 3em;
-	color: #0A0A0A;
+p, ol, ul
+{
+	margin-top: 0;
 }
 
-#link1{
-    width: 15%;
-    height: 20%;
-    text-decoration: none;
-    color: black;
+ol, ul
+{
+	padding: 0;
+	list-style: none;
 }
 
-a{
-    color: black;
-    text-decoration: none;
+p
+{
+	line-height: 180%;
+	color: white;
 }
 
-#link2,#link3,#link4,#link5,#link6,#link7{
-    text-decoration: none;
-    color: black;
-    margin-top: 3.5%;
-    font-size: 100%;
-    height: 21px;
-    margin-left: 3%;
-    margin-right: 3%;
+strong
+{
 }
 
-#menu{
-    display: flex;
-    justify-content: space-evenly;
-    margin-right: 6%;
-    margin-top: 5%;
-    font-size: 0.90em;
+a
+{
+	color: #CC0000;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+.container
+{
+	overflow: hidden;
+	margin: 0em auto;
+	width: 1000px;
+}
+
+.containerdrop
+{
+	margin: 0em auto;
+	width: 1000px;
+}
+
+/*********************************************************************************/
+/* Image Style                                                                   */
+/*********************************************************************************/
+
+	.image
+{
+	display: inline-droplock;
+}
+
+.image img
+{
+	display: block;
+	width: 100%;
+}
+
+.image-full
+{
+	display: block;
+	width: 100%;
+	margin: 0 0 2em 0;
+}
+
+.image-left
+{
+	float: left;
+	margin: 0 2em 2em 0;
+}
+
+.image-centered
+{
+	display: block;
+	margin: 0 0 2em 0;
+}
+
+.image-centered img
+{
+	margin: 0 auto;
+	width: auto;
+}
+
+
+/*********************************************************************************/
+/* 4-column                                                                      */
+/*********************************************************************************/
+
+	.box1,  .box2,  .box3,  .box4
+{
+	width: 235px;
+}
+ .box1,  .box2,  .box3 {
+ float: left;
+ margin-right: 20px;
+}
+
+.box4
+{
+	float: right;
+}
+
+/*********************************************************************************/
+/* 3-column                                                                      */
+/*********************************************************************************/
+
+	.boxA,  .boxB,  .boxC
+{
+	width: 300px;
+}
+
+.boxA,  .boxB
+{
+	float: left;
+	margin-right: 50px;
+}
+
+.boxC
+{
+	float: right;
+}
+
+/*********************************************************************************/
+/* 2-column                                                                      */
+/*********************************************************************************/
+
+	.tbox1,  .tbox2
+{
+	width: 575px;
+}
+
+.tbox1
+{
+	float: left;
+}
+
+.tbox2
+{
+	float: right;
+}
+
+#wrapper
+{
+	background: #1C1C1C;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header-wrapper
+{
+	background: url(Banner/banner.png) no-repeat center;
+	background-size: cover;
+	border-top: 10px solid #CC0000;
+}
+
+#header
+{
+	position: relative;
+	padding: 5em 0em;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+{
+}
+
+#logo h1
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1em 1em;
+	background: #CC0000;
+	border-radius: 0px 0px 5px 5px;
+}
+
+#logo a
+{
+	text-decoration: none;
+	color: #1C1C1C;
+}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	#menu
+{
+	position: absolute;
+	top: 4em;
+	right: 0;
+}
+
+#menu ul
+{
+	display: inline-block;
+}
+
+#menu li
+{
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+#menu li a, #menu li span
+{
+	padding: 1em 1.5em;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.90em;
 	font-weight: 600;
-    color: #1C1C1C;
-    letter-spacing: 1px;
+	color: #1C1C1C;
 }
 
-#conteudoTitulo{
-    text-align: center;
-    color: white;
-    margin-top: 80px;
-    margin-bottom: 40px;
+#menu li:hover a, #menu li.active a, #menu li.active span
+{
+	background: #CC0000;
+	border-radius: 5px;
 }
 
-#tituloh2{
-    font-size: 2.8em;
+#menu .current_page_item a
+{
+}
+
+#menu .icon
+{
+}
+
+#myDropdown{
+	z-index: 9999;
+	position: absolute;
+}
+
+#dropdown{
+	
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.90em;
+	font-weight: 600;
+	color: #1C1C1C;
+}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+{
+	padding: 10em 0em;
+}
+
+#banner span
+{
+	display: block;
+	text-align: center;
+	font-family: 'Notable', sans-serif;
+	font-size: 3em;
+	color: #0A0A0A;
+	margin-bottom: 60px;
+}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+	#page
+	{
+		padding-bottom: 5em;
+	}
+	
+	#page h2
+	{
+		padding-bottom: 1.5em;
+		text-transform: uppercase;
+		font-size: 1.5em;
+	}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+{
+	overflow: hidden;
+	padding: 5em 0em;
+}
+
+#copyright p
+{
+	letter-spacing: 0.20em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	color: rgba(255,255,255,0.6);
+}
+
+#copyright a
+{
+	text-decoration: none;
+	color: rgba(255,255,255,0.9);
+}
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+	.title
+{
+	margin-bottom: 3em;
+	text-transform: uppercase;
+	color: white;
+
+}
+
+.title h2
+{
+	font-size: 2.8em;
 	font-weight: 700;
+	color: white;
 }
 
-#conteudoImagens{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 80px;
+.title .byline
+{
+	font-size: 1.1em;
+	color: white;
 }
 
-#tituloCanalYoutube, #tituloDatasImportantes, #tituloContatos{
-    color: white;
-    font-size: 1.5em;
-    font-weight: 700;
-    margin-bottom: 5%;
+/*********************************************************************************/
+/* Staff                                                                         */
+/*********************************************************************************/
+
+	#staff
+{
+	padding: 5em 0em;
+	text-align: center;
 }
 
-.contatos h3{
-    color: #CC0000;
+/*********************************************************************************/
+/* Welcome                                                                       */
+/*********************************************************************************/
+
+#welcome
+{
+	padding: 5em 0em 5em 0em;
+	border-top: 1px solid rgba(0,0,0,.1);
+	text-align: center;
 }
 
-.contatos a{
-    color: white;
-    font-size: 60%;
-    font-weight: bold;
+ul.style3
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style: none;
+	color: #6c6c6c
 }
 
-#conteudoRacine, #conteudoSonia, #conteudoIvonete{
-    color: red;
+ul.style3 li
+{
+	padding: 1.6em 0em 0em 0em;
+	margin: 0 0 1em 0;
 }
 
-#canalYoutube{
-    display: flex;
-    flex-direction: column;
+ul.style3 p
+{
+	margin: 0;
 }
 
-#imagem1, #imagem2, #imagem3{
-    width: 120px;
-    height: 72px;
-    margin-bottom: 4%;
-    margin-left: 1%;
-    margin-top: -2%;
-}
-
-#conteudoColunas{
-    display: flex;
-    justify-content: space-between;
-}
-
-.datas{
-    display: flex;
-    margin-bottom: 5%;
-}
-
-#informacoes1, #informacoes2{
-    margin-left: 5%;
-}
-
-.imagemData{
-    max-width: 90px;
-    max-height: 100px;
-}
-
-.datas a{
+ul.style3 a
+{
 	display: block;
 	text-decoration: none;
 	color: #CC0000;
 }
 
-.datas h3{
+ul.style3 a:hover
+{
+	text-decoration: underline;
+}
+
+ul.style3 h3
+{
 	padding: 1em 0em 5px 0em;
 	text-transform: uppercase;
 	font-size: 1em;
-    font-weight: 300;
-    color: white;
+	font-weight: 300;
+
 }
 
-#datasImportantes, #canalYoutube, #contatos{
-    width: 30%;
+ul.style3 .first
+{
+	padding-top: 0;
+	background: none;
 }
 
-#canalYoutube{
-    margin-left: 1%;
+ul.style3 .date
+{
+	float: left;
+	position: relative;
+	width: 80px;
+	height: 70px;
+	margin: 0.5em 1.5em 0em 0.5em;
+	padding: 20px 0em 0em 0em;
+	background: #262626;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
+	line-height: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 0px rgba(0,0,0,.2);
+	font-size: 1em;
+	font-weight: 400;
+	color: #1C1C1C;
 }
 
-#contatos{
-    margin-right: 1%;
+ul.style3 .date:after
+{
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
 }
 
-#bemvindo{
-    margin-top: 10%;
-    color: white;
-    font-size: 105%;
-    text-align: center;
-    margin-bottom: 10%;
+ul.style3 .date b
+{
+	margin: 0;
+	padding: 0;
+	display: block;
+	margin-top: -5px;
+	font-size: 1.8em;
+	font-weight: 700;
+	color: #9CA69F;
 }
 
-#bemvindo a{
-    color: #CC0000;
+ul.style3 .date a
+{
+	color: #CC0000 !important;
 }
 
-#bemvindo h1{
-    font-weight: bold;
-    margin-bottom: 10%;
-    font-size: 250%;
+ul.style3 .date a:hover
+{
+	text-decoration: none;
 }
 
-img{
-    max-width: 100%;
-    max-height: 100%;
+ul.style4
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	margin-left: 5px;
+	color: red;
 }
 
-#menu_img{
-    width: 100%;
-    height: 676px;
-    background: url(../imagens/banner.png) no-repeat center;
-    background-size: cover;
+ul.style4 li
+{
+	border-top: 1px solid rgba(0,0,0,0.1);
+	line-height: 3em;
 }
 
-#borda{
-    height: 10px;
-    background-color: #CC0000;
+ul.style4 h3
+{
+	color: red;
 }
 
-#logo1{
-    background-color: #CC0000;
-    margin-left: 3%;
+ul.style4 a
+{
+	color: white;
 }
 
-#iconeyt{
-    padding-bottom: 2%;
-    margin-left: 45%;
-    height: 10%;
-    width: 10%;
+ul.style4 .first
+{
+	padding-top: 0px;
+	border-top: none;
 }
 
-.grow1{ 
-    transition: all .2s ease-in-out;
-    }
-
-.grow2{
-    transition: all .2s ease-in-out;
-}
-    
-.grow1:hover { 
-    text-decoration: none;
-    background-color: #CC0000;
-}
-
-.grow2:hover {
-    transform: scale(1.1);
-}
-
-.fadein {
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
-}
-
-.dropbtn {
-    color: black;
-    border: none;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-
-  }
-  
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
     margin-top: 3.5%;
@@ -255,14 +525,15 @@ img{
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 250;
   }
   
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+	display: block;
+	z-index: 250;
   }
   
   .dropdown a:hover {
@@ -272,7 +543,40 @@ img{
   
   .show {display: block;}
 
-@keyframes fadein {
+  .grow1{ 
+    transition: all .2s ease-in-out;
+    }
+    
+	.grow1:hover { 
+    text-decoration: none;
+    background-color: #CC0000;
+}
+
+.dropbtn {
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+
+  }
+
+  .dropdown a:hover {
+	color: white;
+	transition: all .2s ease-in-out;
+}
+  
+.imagemcinza{
+    -webkit-filter:grayscale(100%);
+}
+.imagemcinza:hover{
+    -webkit-filter:grayscale(0%);
+    transition: 1s;
+}
+
+  @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
