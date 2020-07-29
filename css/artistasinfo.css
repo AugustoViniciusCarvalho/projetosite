@@ -1,46 +1,49 @@
 html{
-	width: 100%;
-	height: 100%;
+    max-width: 100%;
 }
 
 body
 {
-	margin: 0%;
-	padding: 0%;
+	margin: 0px;
+	padding: 0px;
 	background: #707070;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 100%;
+	font-size: 12pt;
 	font-weight: 300;
 	color: #000000;
 }
 
+body{
+    background-color: #707070
+}
+
 #header-wrapper
 {
-	background: url(Banner/banner.png) no-repeat center;
-	background-size: cover;
-	border-top: 62.5% solid #CC0000;
+    background: url(Banner/banner.png) no-repeat center;
+    background-size: cover;
+	border-top: 10px solid #CC0000;
 }
 
 #header
 {
 	position: relative;
-	padding: 8% 0%;
+	padding: 5em 0em;
 }
 
 .containerdrop
 {
-	margin: 0% auto;
-	width: 99%;
+	margin: 0em auto;
+	width: 1000px;
 }
 
 #logo h1
 {
 	position: absolute;
-	top: 0%;
-	left: 0%;
-	padding: 5% 5%;
+	top: 0;
+	left: 0;
+	padding: 1em 1em;
 	background: #CC0000;
-	border-radius: 0% 0% 1% 1%;
+	border-radius: 0px 0px 5px 5px;
 }
 
 #logo a
@@ -52,9 +55,8 @@ body
 #menu
 {
 	position: absolute;
-	top: 50%;
-	right: 0%;
-	width: 60%;
+	top: 4em;
+	right: 0;
 }
 
 #menu ul
@@ -71,19 +73,19 @@ body
 
 #menu li a, #menu li span
 {
-	padding: 10% 16px;
+	padding: 1em 1.5em;
 	letter-spacing: 1px;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 90%;
+	font-size: 0.90em;
 	font-weight: 600;
-    color: #1C1C1C;
+	color: #1C1C1C;
 }
 
 #menu li:hover a, #menu li.active a, #menu li.active span
 {
 	background: #CC0000;
-	border-radius: 5%;
+	border-radius: 5px;
 }
 
 #myDropdown{
@@ -96,7 +98,7 @@ body
 	letter-spacing: 1px;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 90%;
+	font-size: 0.90em;
 	font-weight: 600;
 	color: #1C1C1C;
 }
