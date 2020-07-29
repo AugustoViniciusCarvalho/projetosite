@@ -12,223 +12,230 @@
     <link rel="icon" href="imagens/favicon.ico">
 </head>
 
-<body class="fadein">
-    <div id="header-wrapper">
-        <div id="header" class="containerdrop">
-            <div id="logo">
-                <h1><a href="index.html">HISTORIAR</a></h1>
-            </div>
-            <div id="menu">
-                <ul>
-                    <li><a onclick="myFunction()" class="dropbtn">ARTISTAS</a></li>
-                    <li><a href="dramaturgia.html" accesskey="2" title="">DRAMATURGIA</a></li>
-                    <li><a href="futuro.html" accesskey="3" title="">GRUPOS</a></li>
-                    <li><a href="galeria.html" accesskey="4" title="">GALERIA</a></li>
-                    <li><a href="futuro.html" accesskey="5" title="">TEATROS</a></li>
-                    <div class="dropdown" id="dropdown">
-                        <div id="myDropdown" class="dropdown-content">
-                          <a href="#" onclick="tipo(event)" id="todos">TODOS</a>
-                          <a href="#" onclick="tipo(event)" id="diretor">DIRETOR</a>
-                          <a href="#" onclick="tipo(event)" id="ator">ATOR</a>
-                          <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGO</a>
-                          <a href="#" onclick="tipo(event)" id="pesquisador">PESQUISADOR</a>
-                          <a href="#" onclick="tipo(event)" id="produtor">PRODUTOR</a>
+<div id="tudoteste">
+
+    <body class="fadein">
+        <div id="header-wrapper">
+            <div id="header" class="containerdrop">
+                <div id="logo">
+                    <h1><a href="index.html">HISTORIAR</a></h1>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a onclick="myFunction()" class="dropbtn">ARTISTAS</a></li>
+                        <li><a href="dramaturgia.html" accesskey="2" title="">DRAMATURGIA</a></li>
+                        <li><a href="futuro.html" accesskey="3" title="">GRUPOS</a></li>
+                        <li><a href="galeria.html" accesskey="4" title="">GALERIA</a></li>
+                        <li><a href="teatros.html" accesskey="5" title="">TEATROS</a></li>
+                        <div class="dropdown" id="dropdown">
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#" onclick="tipo(event)" id="todos">TODOS</a>
+                                <a href="#" onclick="tipo(event)" id="diretor">DIRETOR</a>
+                                <a href="#" onclick="tipo(event)" id="ator">ATOR</a>
+                                <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGO</a>
+                                <a href="#" onclick="tipo(event)" id="pesquisador">PESQUISADOR</a>
+                                <a href="#" onclick="tipo(event)" id="produtor">PRODUTOR</a>
+                            </div>
                         </div>
-                      </div>
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="pesquisar">
-        <input type="text" id="input" onkeyup="pesquisar()" placeholder="Pesquisar Obra">
-
-
-
-        <ul id="textos" class="flex-container">
-            <li id="itens" class="grow2 naticortez">
-                <div>
-                    <p>Nati Cortez</p>
-                    <img src="Obras Imagens/aabelinhasonhadora.png" alt="" id="aabelinhasonhadora"
-                        onclick="info(event)">
-                    <p id="aabelinhasonhadora" onclick="info(event)">A Abelhinha Sonhadora</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 naticortez">
-                <div>
-                    <p>Nati Cortez</p>
-                    <img src="Obras Imagens/aguerradosplanetas.png" alt="" id="aguerradosplanetas"
-                        onclick="info(event)">
-                    <p id="aguerradosplanetas" onclick="info(event)">A Guerra dos Planetas</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 autordesconhecido">
-                <div>
-                    <p>Autor Desconhecido</p>
-                    <img src="Obras Imagens/aloucadamontanha.png" alt="" id="aloucadamontanha" onclick="info(event)">
-                    <p id="aloucadamontanha" onclick="info(event)">A Louca da Montanha</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 autordesconhecido">
-                <div>
-                    <p>Autor Desconhecido</p>
-                    <img src="Obras Imagens/amanhaquemsabe.png" alt="" id="amanhaquemsabe" onclick="info(event)">
-                    <p id="amanhaquemsabe" onclick="info(event)">Amanhã, Quem Sabe?</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 manoelwanderley">
-                <div>
-                    <p>Manoel Wanderley</p>
-                    <img src="Obras Imagens/aprovidencia.png" alt="" id="aprovidencia" onclick="info(event)">
-                    <p id="aprovidencia" onclick="info(event)">A Providência</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 manoelwanderley">
-                <div>
-                    <p>Manoel Wanderley</p>
-                    <img src="Obras Imagens/astresdatas.png" alt="" id="astresdatas" onclick="info(event)">
-                    <p id="astresdatas" onclick="info(event)">As Três Datas</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 poncianobarbosa">
-                <div>
-                    <p>Ponciano Barbosa</p>
-                    <img src="Obras Imagens/avemaria.png" alt="" id="avemaria" onclick="info(event)">
-                    <p id="avemaria" onclick="info(event)">Ave-Maria</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 manoelwanderley">
-                <div>
-                    <p>Manoel Wanderley</p>
-                    <img src="Obras Imagens/brasileiroseportugueses.png" alt="" id="brasileiroseportugueses"
-                        onclick="info(event)">
-                    <p id="brasileiroseportugueses" onclick="info(event)">Brasileiros e Portuguêses</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 meirapires">
-                <div>
-                    <p>Meira Pires</p>
-                    <img src="Obras Imagens/cabecadomundo.png" alt="" id="cabecadomundo" onclick="info(event)">
-                    <p id="cabecadomundo" onclick="info(event)">Cabeça do Mundo</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 josewanderley mariolago">
-                <div>
-                    <p id="josewanderleyemariolago">José Wanderley e Mário Lago</p>
-                    <img src="Obras Imagens/caodefila.png" alt="" id="caodefila" onclick="info(event)">
-                    <p id="caodefila" onclick="info(event)">Cão de Fila</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 josewanderley">
-                <div>
-                    <p>José Wanderley</p>
-                    <img src="Obras Imagens/compraseummarido.png" alt="" id="compraseummarido" onclick="info(event)">
-                    <p id="compraseummarido" onclick="info(event)">Compra-se um Marido</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 naticortez">
-                <div>
-                    <p>Nati Cortez</p>
-                    <img src="Obras Imagens/dialogodasestrelas.png" alt="" id="dialogodasestrelas"
-                        onclick="info(event)">
-                    <p id="dialogodasestrelas" onclick="info(event)">Diálogo das Estrelas</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 santaguerra">
-                <div>
-                    <p>Santa Guerra</p>
-                    <img src="Obras Imagens/formacaorural.png" alt="" id="formacaorural" onclick="info(event)">
-                    <p id="formacaorural" onclick="info(event)">Formação Rural</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 manoelwanderley">
-                <div>
-                    <p>Manoel Wanderley</p>
-                    <img src="Obras Imagens/oanjodameianoite.png" alt="" id="oanjodameianoite" onclick="info(event)">
-                    <p id="oanjodameianoite" onclick="info(event)">O Anjo da Meia Noite</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 enockdomingos">
-                <div>
-                    <p>Enock Domingos</p>
-                    <img src="Obras Imagens/ocarrasco.png" alt="" id="ocarrasco" onclick="info(event)">
-                    <p id="ocarrasco" onclick="info(event)">O Carrasco</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 santaguerra">
-                <div>
-                    <p>Santa Guerra</p>
-                    <img src="Obras Imagens/omenordosmeusirmaos.png" alt="" id="omenordosmeusirmaos"
-                        onclick="info(event)">
-                    <p id="omenordosmeusirmaos" onclick="info(event)">O Menor dos Meus Irmãos</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 naticortez">
-                <div>
-                    <p>Nati Cortez</p>
-                    <img src="Obras Imagens/onatalnoespacosideral.png" alt="" id="onatalnoespacosideral"
-                        onclick="info(event)">
-                    <p id="onatalnoespacosideral" onclick="info(event)">O Natal no Espaço Sideral</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 manoelwanderley">
-                <div>
-                    <p>Manoel Wanderley</p>
-                    <img src="Obras Imagens/osanjosdoclaustro.png" alt="" id="osanjosdoclaustro" onclick="info(event)">
-                    <p id="osanjosdoclaustro" onclick="info(event)">Os Anjos do Claustro</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 j.fernandes">
-                <div>
-                    <p>J. Fernandes</p>
-                    <img src="Obras Imagens/pelasgrades.png" alt="" id="pelasgrades" onclick="info(event)">
-                    <p id="pelasgrades" onclick="info(event)">Pelas Grades</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 josewanderley mariolago">
-                <div>
-                    <p id="josewanderleyemariolago">José Wanderley e Mário Lago</p>
-                    <img src="Obras Imagens/pertinhodoceu.png" alt="" id="pertinhodoceu" onclick="info(event)">
-                    <p id="pertinhodoceu" onclick="info(event)">Pertinho do Céu</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 marcossa">
-                <div>
-                    <p>Marcos Sá</p>
-                    <img src="Obras Imagens/seusoldonalua.png" alt="" id="seusoldonalua" onclick="info(event)">
-                    <p id="seusoldonalua" onclick="info(event)">Seu Sol, Dona Lua</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 newtonnavarro">
-                <div>
-                    <p>Newton Navarro</p>
-                    <img src="Obras Imagens/umjardimchamadogetsemani.png" alt="" id="umjardimchamadogetsemani"
-                        onclick="info(event)">
-                    <p id="umjardimchamadogetsemani" onclick="info(event)">Um Jardim Chamado Getsêmani</p>
-                </div>
-            </li>
-            <li id="itens" class="grow2 meirapires">
-                <div>
-                    <p>Meira Pires</p>
-                    <img src="Obras Imagens/umrestodehomem.png" alt="" id="umrestodehomem" onclick="info(event)">
-                    <p id="umrestodehomem" onclick="info(event)">Um Resto de Homem</p>
-                </div>
-            </li>
-        </ul>
+        <div id="pesquisar">
+            <input type="text" id="input" onkeyup="pesquisar()" placeholder="Pesquisar Obra">
 
 
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-        <script src="js/dramaturgia.js"></script>
-    </div>
-</body>
+            <ul id="textos" class="flex-container">
+                <li id="itens" class="grow2 naticortez">
+                    <div>
+                        <p>Nati Cortez</p>
+                        <img src="Obras Imagens/aabelinhasonhadora.png" alt="" id="aabelinhasonhadora"
+                            onclick="info(event)">
+                        <p id="aabelinhasonhadora" onclick="info(event)">A Abelhinha Sonhadora</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 naticortez">
+                    <div>
+                        <p>Nati Cortez</p>
+                        <img src="Obras Imagens/aguerradosplanetas.png" alt="" id="aguerradosplanetas"
+                            onclick="info(event)">
+                        <p id="aguerradosplanetas" onclick="info(event)">A Guerra dos Planetas</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 autordesconhecido">
+                    <div>
+                        <p id="autordesconhecidotexto">Autor Desconhecido</p>
+                        <img src="Obras Imagens/aloucadamontanha.png" alt="" id="aloucadamontanha"
+                            onclick="info(event)">
+                        <p id="aloucadamontanha" onclick="info(event)">A Louca da Montanha</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 autordesconhecido">
+                    <div>
+                        <p id="autordesconhecidotexto">Autor Desconhecido</p>
+                        <img src="Obras Imagens/amanhaquemsabe.png" alt="" id="amanhaquemsabe" onclick="info(event)">
+                        <p id="amanhaquemsabe" onclick="info(event)">Amanhã, Quem Sabe?</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 manoelwanderley">
+                    <div>
+                        <p>Manoel Wanderley</p>
+                        <img src="Obras Imagens/aprovidencia.png" alt="" id="aprovidencia" onclick="info(event)">
+                        <p id="aprovidencia" onclick="info(event)">A Providência</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 manoelwanderley">
+                    <div>
+                        <p>Manoel Wanderley</p>
+                        <img src="Obras Imagens/astresdatas.png" alt="" id="astresdatas" onclick="info(event)">
+                        <p id="astresdatas" onclick="info(event)">As Três Datas</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 poncianobarbosa">
+                    <div>
+                        <p>Ponciano Barbosa</p>
+                        <img src="Obras Imagens/avemaria.png" alt="" id="avemaria" onclick="info(event)">
+                        <p id="avemaria" onclick="info(event)">Ave-Maria</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 manoelwanderley">
+                    <div>
+                        <p>Manoel Wanderley</p>
+                        <img src="Obras Imagens/brasileiroseportugueses.png" alt="" id="brasileiroseportugueses"
+                            onclick="info(event)">
+                        <p id="brasileiroseportugueses" onclick="info(event)">Brasileiros e Portuguêses</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 meirapires">
+                    <div>
+                        <p>Meira Pires</p>
+                        <img src="Obras Imagens/cabecadomundo.png" alt="" id="cabecadomundo" onclick="info(event)">
+                        <p id="cabecadomundo" onclick="info(event)">Cabeça do Mundo</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 josewanderley mariolago">
+                    <div>
+                        <p id="josewanderleyemariolago">José Wanderley e Mário Lago</p>
+                        <img src="Obras Imagens/caodefila.png" alt="" id="caodefila" onclick="info(event)">
+                        <p id="caodefila" onclick="info(event)">Cão de Fila</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 josewanderley">
+                    <div>
+                        <p>José Wanderley</p>
+                        <img src="Obras Imagens/compraseummarido.png" alt="" id="compraseummarido"
+                            onclick="info(event)">
+                        <p id="compraseummarido" onclick="info(event)">Compra-se um Marido</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 naticortez">
+                    <div>
+                        <p>Nati Cortez</p>
+                        <img src="Obras Imagens/dialogodasestrelas.png" alt="" id="dialogodasestrelas"
+                            onclick="info(event)">
+                        <p id="dialogodasestrelas" onclick="info(event)">Diálogo das Estrelas</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 santaguerra">
+                    <div>
+                        <p>Santa Guerra</p>
+                        <img src="Obras Imagens/formacaorural.png" alt="" id="formacaorural" onclick="info(event)">
+                        <p id="formacaorural" onclick="info(event)">Formação Rural</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 manoelwanderley">
+                    <div>
+                        <p>Manoel Wanderley</p>
+                        <img src="Obras Imagens/oanjodameianoite.png" alt="" id="oanjodameianoite"
+                            onclick="info(event)">
+                        <p id="oanjodameianoite" onclick="info(event)">O Anjo da Meia Noite</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 enockdomingos">
+                    <div>
+                        <p>Enock Domingos</p>
+                        <img src="Obras Imagens/ocarrasco.png" alt="" id="ocarrasco" onclick="info(event)">
+                        <p id="ocarrasco" onclick="info(event)">O Carrasco</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 santaguerra">
+                    <div>
+                        <p>Santa Guerra</p>
+                        <img src="Obras Imagens/omenordosmeusirmaos.png" alt="" id="omenordosmeusirmaos"
+                            onclick="info(event)">
+                        <p id="omenordosmeusirmaos" onclick="info(event)">O Menor dos Meus Irmãos</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 naticortez">
+                    <div>
+                        <p>Nati Cortez</p>
+                        <img src="Obras Imagens/onatalnoespacosideral.png" alt="" id="onatalnoespacosideral"
+                            onclick="info(event)">
+                        <p id="onatalnoespacosideral" onclick="info(event)">O Natal no Espaço Sideral</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 manoelwanderley">
+                    <div>
+                        <p>Manoel Wanderley</p>
+                        <img src="Obras Imagens/osanjosdoclaustro.png" alt="" id="osanjosdoclaustro"
+                            onclick="info(event)">
+                        <p id="osanjosdoclaustro" onclick="info(event)">Os Anjos do Claustro</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 j.fernandes">
+                    <div>
+                        <p>J. Fernandes</p>
+                        <img src="Obras Imagens/pelasgrades.png" alt="" id="pelasgrades" onclick="info(event)">
+                        <p id="pelasgrades" onclick="info(event)">Pelas Grades</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 josewanderley mariolago">
+                    <div>
+                        <p id="josewanderleyemariolago">José Wanderley e Mário Lago</p>
+                        <img src="Obras Imagens/pertinhodoceu.png" alt="" id="pertinhodoceu" onclick="info(event)">
+                        <p id="pertinhodoceu" onclick="info(event)">Pertinho do Céu</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 marcossa">
+                    <div>
+                        <p>Marcos Sá</p>
+                        <img src="Obras Imagens/seusoldonalua.png" alt="" id="seusoldonalua" onclick="info(event)">
+                        <p id="seusoldonalua" onclick="info(event)">Seu Sol, Dona Lua</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 newtonnavarro">
+                    <div>
+                        <p>Newton Navarro</p>
+                        <img src="Obras Imagens/umjardimchamadogetsemani.png" alt="" id="umjardimchamadogetsemani"
+                            onclick="info(event)">
+                        <p id="umjardimchamadogetsemani" onclick="info(event)">Um Jardim Chamado Getsêmani</p>
+                    </div>
+                </li>
+                <li id="itens" class="grow2 meirapires">
+                    <div>
+                        <p>Meira Pires</p>
+                        <img src="Obras Imagens/umrestodehomem.png" alt="" id="umrestodehomem" onclick="info(event)">
+                        <p id="umrestodehomem" onclick="info(event)">Um Resto de Homem</p>
+                    </div>
+                </li>
+            </ul>
+
+
+
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
+            <script src="js/dramaturgia.js"></script>
+        </div>
+    </body>
+</div>
 
 </html>
