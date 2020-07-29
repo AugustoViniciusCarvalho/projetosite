@@ -106,38 +106,6 @@ img{
     max-height: 100%;
 }
 
-#input{
-    margin-left: 5.7%;
-}
-
-#pesquisar{
-    margin-top: 2%;
-    width: 100%;
-}
-
-#itens{
-    width: 144px;
-    margin-left: 4%;
-    margin-top: 2%;
-    list-style-type: none;
-    text-align: center;
-}
-
-#josewanderleyemariolago{
-    width: 150%;
-    margin-left: -30px;
-}
-
-#flexbox{
-    margin: 2%;
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
 .grow1{ 
     transition: all .2s ease-in-out;
     }
@@ -153,6 +121,36 @@ img{
 
 .grow2:hover {
     transform: scale(1.1);
+}
+
+#artistas{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3%;
+    width: 100%;
+}
+
+.dramaturgo, .ator, .diretor{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.artistadiv{
+    margin-left: 5%;
+    width: 144px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.tituloartista{
+    margin-top: 1%;
+    color: black;
+    width: 144px;
+    text-align: center;
 }
 
 .fadein {
@@ -178,8 +176,8 @@ img{
     position: relative;
     display: inline-block;
     margin-top: 3.5%;
-    margin-right: 3%;
     margin-left: 3%;
+    margin-right: 3%;
   }
   
   .dropdown-content {
@@ -200,7 +198,8 @@ img{
   }
   
   .dropdown a:hover {
-
+      color: white;
+      transition: all .2s ease-in-out;
 }
   
   .show {display: block;}
@@ -232,4 +231,54 @@ img{
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+#albertomaranhao, #casadaribeira{
+    display: flex;
+    background-color: #404040;
+    width: 70%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#casadaribeira{
+    margin-left: auto;
+}
+
+#albertomaranhao2, #casadaribeira2{
+    background-color: #404040;
+    color: white;
+    text-align: center;
+    height: 100%;
+    margin-left: 2.5%;
+    margin-right: 2%;
+}
+
+#imagem1{
+    width: 25%;
+    margin-top: -5%;
+    margin-bottom: -5%;
+    margin-left: 6%;
+    float: left;
+}
+
+#imagem2{
+    width: 25%;
+    margin-top: -5%;
+    margin-bottom: -5%;
+    margin-right: 6%;
+    float: right;
+}
+
+#albertomaranhao2 a, #casadaribeira a{
+    text-decoration: none;
+    color: red;
+}
+
+#albertomaranhao2 p{
+    text-align: justify;
+}
+
+#casadaribeira2 p{
+    text-align: justify;
 }

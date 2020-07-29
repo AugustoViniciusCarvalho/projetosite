@@ -1,35 +1,35 @@
 
-html, body
-{
+html{
+	width: 100%;
 	height: 100%;
 }
 
 body
 {
-	margin: 0px;
-	padding: 0px;
+	margin: 0%;
+	padding: 0%;
 	background: #CC0000;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 12pt;
+	font-size: 100%;
 	font-weight: 300;
 	color: #000000;
 }
 
 h1, h2, h3
 {
-	margin: 0;
-	padding: 0;
+	margin: 0%;
+	padding: 0%;
 	color: white;
 }
 
 p, ol, ul
 {
-	margin-top: 0;
+	margin-top: 0%;
 }
 
 ol, ul
 {
-	padding: 0;
+	padding: 0%;
 	list-style: none;
 }
 
@@ -62,8 +62,8 @@ a:hover
 
 .containerdrop
 {
-	margin: 0em auto;
-	width: 1000px;
+	margin: 0% auto;
+	width: 99%;
 }
 
 /*********************************************************************************/
@@ -85,24 +85,24 @@ a:hover
 {
 	display: block;
 	width: 100%;
-	margin: 0 0 2em 0;
+	margin: 0 0 200% 0;
 }
 
 .image-left
 {
 	float: left;
-	margin: 0 2em 2em 0;
+	margin: 0 200% 200% 0;
 }
 
 .image-centered
 {
 	display: block;
-	margin: 0 0 2em 0;
+	margin: 0 0 200% 0;
 }
 
 .image-centered img
 {
-	margin: 0 auto;
+	margin: 0% auto;
 	width: auto;
 }
 
@@ -113,11 +113,11 @@ a:hover
 
 	.box1,  .box2,  .box3,  .box4
 {
-	width: 235px;
+	width: 143%;
 }
  .box1,  .box2,  .box3 {
  float: left;
- margin-right: 20px;
+ margin-right: 125%;
 }
 
 .box4
@@ -131,13 +131,13 @@ a:hover
 
 	.boxA,  .boxB,  .boxC
 {
-	width: 300px;
+	width: 30%;
 }
 
 .boxA,  .boxB
 {
 	float: left;
-	margin-right: 50px;
+	margin-right: 5%;
 }
 
 .boxC
@@ -151,7 +151,7 @@ a:hover
 
 	.tbox1,  .tbox2
 {
-	width: 575px;
+	width: 100%;
 }
 
 .tbox1
@@ -177,13 +177,13 @@ a:hover
 {
 	background: url(Banner/banner.png) no-repeat center;
 	background-size: cover;
-	border-top: 10px solid #CC0000;
+	border-top: 62.5% solid #CC0000;
 }
 
 #header
 {
 	position: relative;
-	padding: 5em 0em;
+	padding: 8% 0%;
 }
 
 /*********************************************************************************/
@@ -197,11 +197,11 @@ a:hover
 #logo h1
 {
 	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 1em 1em;
+	top: 0%;
+	left: 0%;
+	padding: 5% 5%;
 	background: #CC0000;
-	border-radius: 0px 0px 5px 5px;
+	border-radius: 0% 0% 1% 1%;
 }
 
 #logo a
@@ -217,8 +217,9 @@ a:hover
 	#menu
 {
 	position: absolute;
-	top: 4em;
-	right: 0;
+	top: 50%;
+	right: -5%;
+	width: 60%;
 }
 
 #menu ul
@@ -235,11 +236,11 @@ a:hover
 
 #menu li a, #menu li span
 {
-	padding: 1em 1.5em;
+	padding: 10% 16px;
 	letter-spacing: 1px;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 0.90em;
+	font-size: 90%;
 	font-weight: 600;
 	color: #1C1C1C;
 }
@@ -247,7 +248,7 @@ a:hover
 #menu li:hover a, #menu li.active a, #menu li.active span
 {
 	background: #CC0000;
-	border-radius: 5px;
+	border-radius: 5%;
 }
 
 #menu .current_page_item a
@@ -268,7 +269,7 @@ a:hover
 	letter-spacing: 1px;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 0.90em;
+	font-size: 90%;
 	font-weight: 600;
 	color: #1C1C1C;
 }
@@ -279,7 +280,8 @@ a:hover
 
 	#banner
 {
-	padding: 10em 0em;
+	padding: 16% 0%;
+	width: 100%;
 }
 
 #banner span
@@ -287,9 +289,9 @@ a:hover
 	display: block;
 	text-align: center;
 	font-family: 'Notable', sans-serif;
-	font-size: 3em;
+	font-size: 300%;
 	color: #0A0A0A;
-	margin-bottom: 60px;
+	margin-bottom: 5%;
 }
 
 /*********************************************************************************/
@@ -298,14 +300,15 @@ a:hover
 
 	#page
 	{
-		padding-bottom: 5em;
+		padding-bottom: 5%;
+		width: 100%;
 	}
 	
 	#page h2
 	{
-		padding-bottom: 1.5em;
+		padding-bottom: 5%;
 		text-transform: uppercase;
-		font-size: 1.5em;
+		font-size: 150%;
 	}
 
 /*********************************************************************************/
@@ -315,7 +318,8 @@ a:hover
 	#copyright
 {
 	overflow: hidden;
-	padding: 5em 0em;
+	padding: 8% 0%;
+	width: 100%;
 }
 
 #copyright p
@@ -323,7 +327,7 @@ a:hover
 	letter-spacing: 0.20em;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 0.80em;
+	font-size: 80%;
 	color: rgba(255,255,255,0.6);
 }
 
@@ -339,22 +343,22 @@ a:hover
 
 	.title
 {
-	margin-bottom: 3em;
+	margin-bottom: 15%;
 	text-transform: uppercase;
 	color: white;
-
+	
 }
 
 .title h2
 {
-	font-size: 2.8em;
+	font-size: 280%;
 	font-weight: 700;
 	color: white;
 }
 
 .title .byline
 {
-	font-size: 1.1em;
+	font-size: 110%;
 	color: white;
 }
 
@@ -364,8 +368,9 @@ a:hover
 
 	#staff
 {
-	padding: 5em 0em;
+	padding: 10% 0%;
 	text-align: center;
+	width: 100%;
 }
 
 /*********************************************************************************/
@@ -374,15 +379,16 @@ a:hover
 
 #welcome
 {
-	padding: 5em 0em 5em 0em;
+	padding: 5% 0% 5% 0%;
 	border-top: 1px solid rgba(0,0,0,.1);
 	text-align: center;
+	width: 100%;
 }
 
 ul.style3
 {
-	margin: 0;
-	padding: 0;
+	margin: 0%;
+	padding: 0%;
 	overflow: hidden;
 	list-style: none;
 	color: #6c6c6c
@@ -390,13 +396,13 @@ ul.style3
 
 ul.style3 li
 {
-	padding: 1.6em 0em 0em 0em;
-	margin: 0 0 1em 0;
+	padding: 1.6% 0% 0% 0%;
+	margin: 0% 0% 10% 0%;
 }
 
 ul.style3 p
 {
-	margin: 0;
+	margin: 0%;
 }
 
 ul.style3 a
@@ -413,16 +419,16 @@ ul.style3 a:hover
 
 ul.style3 h3
 {
-	padding: 1em 0em 5px 0em;
+	padding: 5% 0% 1% 0%;
 	text-transform: uppercase;
-	font-size: 1em;
+	font-size: 100%;
 	font-weight: 300;
 
 }
 
 ul.style3 .first
 {
-	padding-top: 0;
+	padding-top: 0%;
 	background: none;
 }
 
