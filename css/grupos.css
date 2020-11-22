@@ -196,6 +196,24 @@ img{
     text-decoration: none;
     display: block;
   }
+
+  .dropdown-contentGaleria {
+    display: none;
+    position: relative;
+    margin-left: 200%;
+    background-color: rgba(183, 28, 28, 0.7);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-contentGaleria a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
   
   .dropdown a:hover {
       color: white;
@@ -233,7 +251,7 @@ img{
     to   { opacity: 1; }
 }
 
-#albertomaranhao, #casadaribeira{
+#grupose, #grupos{
     display: flex;
     background-color: #404040;
     width: 70%;
@@ -241,21 +259,21 @@ img{
     margin-bottom: 5%;
 }
 
-#casadaribeira{
+#grupos{
     margin-left: auto;
 }
 
-#albertomaranhao2, #casadaribeira2{
+#grupose2, #grupos2{
     background-color: #404040;
     color: white;
     text-align: center;
-    height: 100%;
+    height: 175px;
     margin-left: 2.5%;
     margin-right: 2%;
 }
 
 #imagem1{
-    width: 25%;
+    width: 30%;
     margin-top: -5%;
     margin-bottom: -5%;
     margin-left: 6%;
@@ -263,22 +281,31 @@ img{
 }
 
 #imagem2{
-    width: 25%;
+    width: 30%;
     margin-top: -5%;
     margin-bottom: -5%;
     margin-right: 6%;
     float: right;
 }
 
-#albertomaranhao2 a, #casadaribeira a{
+#grupose2 a, #grupos a{
     text-decoration: none;
     color: red;
 }
 
-#albertomaranhao2 p{
+#grupose2 p{
     text-align: justify;
+    font-size: small;
 }
 
-#casadaribeira2 p{
+#grupos2 p{
     text-align: justify;
+    font-size: small;
 }
+
+.imagemcinza{
+    -webkit-filter:grayscale(100%);
+}
+.imagemcinza:hover{
+    -webkit-filter:grayscale(0%);
+    transition: 1s;

@@ -23,7 +23,7 @@
                     <li><a onclick="myFunction()" class="dropbtn">ARTISTAS</a></li>
                     <li><a href="dramaturgia.html" accesskey="2" title="">DRAMATURGIA</a></li>
                     <li><a href="grupos.html" accesskey="3" title="">GRUPOS</a></li>
-                    <li><a href="galeria.html" accesskey="4" title="">GALERIA</a></li>
+                    <li><a onclick="myFunctionGaleria()" class="dropbtn" accesskey="4" title="">GALERIA</a></li>
                     <li><a href="teatros.html" accesskey="5" title="">TEATROS</a></li>
                     <div class="dropdown" id="dropdown">
                         <div id="myDropdown" class="dropdown-content">
@@ -34,21 +34,63 @@
                           <a href="#" onclick="tipo(event)" id="pesquisador">PESQUISADOR</a>
                           <a href="#" onclick="tipo(event)" id="produtor">PRODUTOR</a>
                         </div>
+                        <div id="myDropdownGaleria" class="dropdown-contentGaleria">
+                            <a href="#" onclick="tipoGaleria(event)" id="todos">TODOS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="teatro">TEATROS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="artista">ARTISTAS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="evento">EVENTOS</a>
+                          </div>
                       </div>
                 </ul>
             </div>
         </div>
     </div>
-
-    <div id="imagens">
-        <span class="grow2">
-            <img src="imagens/leniltonteixeira.png" alt="" class="imagens">
+    
+    <div id="fotos">
+        <span class="grow2 artista" id="imagem1">
+            <div class="artista fotoDiv" id="artista1">
+                <img src="Galeria imagens/racine.jpg" alt="" class="imagemcinza">
+            </div>
         </span>
-        <span class="grow2">
-            <img src="imagens/grimariofarias.png" alt="" class="imagens">
+        <span class="grow2 teatro" id="imagem2">
+            <div class="teatro fotoDiv" id="teatro1">
+                <img src="Galeria imagens/dixhuit.jpg" alt="" class="imagemcinza">
+            </div>
         </span>
-        <span class="grow2">
-            <img src="imagens/ivonetealbano.png" alt="" class="imagens">
+        <span class="grow2 evento" id="imagem3">
+            <div class="evento fotoDiv" id="evento1">
+                <img src="Galeria imagens/Mulheres invisiveis.jpg" alt="" class="imagemcinza">
+            </div>
+        </span>
+        <span class="grow2 teatro" id="imagem4">
+            <div class="teatro fotoDiv" id="teatro2">
+                <img src="Galeria imagens/teatroParnamirim.jpg" alt="" class="imagemcinza">
+            </div>
+        </span>
+        <span class="grow2 teatro" id="imagem5">
+            <div class="teatro fotoDiv" id="teatro3">
+                <img src="Galeria imagens/albertomaranhao.jpg" alt="" class="imagemcinza">
+            </div>
+        </span>
+        <span class="grow2 teatro" id="imagem6">
+            <div class="teatro fotoDiv" id="teatro4">
+                <img src="Galeria imagens/albertomaranhao2.jpg" alt="" class="imagemcinza">
+            </div>
+        </span>
+        <span class="grow2 teatro" id="imagem7">
+            <div class="teatro fotoDiv" id="teatro5">
+                <img src="Galeria imagens/cine.JPG" alt="" class="imagemcinza">
+            </div>
+        </span>
+        <span class="grow2 artista" id="imagem8">
+            <div class="artista fotoDiv" id="artista2">
+                <img src="Galeria imagens/grupo.JPG" alt="" class="imagemcinza">
+            </div>
+        </span>
+        <span class="grow2 artista" id="imagem9">
+            <div class="artista fotoDiv" id="artista3">
+                <img src="Galeria imagens/ivonete.JPG" alt="" class="imagemcinza">
+            </div>
         </span>
     </div>
 
@@ -61,6 +103,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.js"></script>
     <script src="js/galeria.js"></script>
 </body>
 

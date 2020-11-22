@@ -161,7 +161,25 @@ img{
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
       }
+
+      .dropdown-contentGaleria {
+        display: none;
+        position: relative;
+        margin-left: 200%;
+        background-color: rgba(183, 28, 28, 0.7);
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
       
+      .dropdown-contentGaleria a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
       .dropdown-content a {
         color: black;
         padding: 12px 16px;
@@ -216,3 +234,31 @@ img{
         height: 216px;
         width: 216px;
     }
+
+    #fotos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 4%;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    .todos, .teatro, .artista, .evento{
+        margin-right: 1%;
+        margin-left: 1%;
+        margin-top: 3%;
+    }
+    
+    .fotoDiv{
+        width: 270px;
+    }
+
+    .imagemcinza{
+        -webkit-filter:grayscale(100%);
+        height: 180px;
+        width: 270px;
+    }
+    .imagemcinza:hover{
+        -webkit-filter:grayscale(0%);
+        transition: 1s;}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teatros</title>
+    <title>Grupos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/grupos.css">
@@ -24,45 +24,46 @@
                     <li><a onclick="myFunction()" class="dropbtn">ARTISTAS</a></li>
                     <li><a href="dramaturgia.html" accesskey="2" title="">DRAMATURGIA</a></li>
                     <li><a href="grupos.html" accesskey="3" title="">GRUPOS</a></li>
-                    <li><a href="galeria.html" accesskey="4" title="">GALERIA</a></li>
+                    <li><a onclick="myFunctionGaleria()" class="dropbtn" accesskey="4" title="">GALERIA</a></li>
                     <li><a href="teatros.html" accesskey="5" title="">TEATROS</a></li>
                     <div class="dropdown" id="dropdown">
                         <div id="myDropdown" class="dropdown-content">
-                            <a href="#" onclick="tipo(event)" id="todos">TODOS</a>
-                            <a href="#" onclick="tipo(event)" id="diretor">DIRETOR</a>
-                            <a href="#" onclick="tipo(event)" id="ator">ATOR</a>
-                            <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGO</a>
-                            <a href="#" onclick="tipo(event)" id="pesquisador">PESQUISADOR</a>
-                            <a href="#" onclick="tipo(event)" id="produtor">PRODUTOR</a>
+                          <a href="#" onclick="tipo(event)" id="todos">TODOS</a>
+                          <a href="#" onclick="tipo(event)" id="diretor">DIRETOR</a>
+                          <a href="#" onclick="tipo(event)" id="ator">ATOR</a>
+                          <a href="#" onclick="tipo(event)" id="dramaturgo">DRAMATURGO</a>
+                          <a href="#" onclick="tipo(event)" id="pesquisador">PESQUISADOR</a>
+                          <a href="#" onclick="tipo(event)" id="produtor">PRODUTOR</a>
                         </div>
-                    </div>
+                        <div id="myDropdownGaleria" class="dropdown-contentGaleria">
+                            <a href="#" onclick="tipoGaleria(event)" id="todos">TODOS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="teatro">TEATROS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="artista">ARTISTAS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="evento">EVENTOS</a>
+                          </div>
+                      </div>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div id="teatros">
-        <div id="albertomaranhao">
-            <img src="Imagens Index/pic02.jpg" alt="" id="imagem1">
-            <div id="albertomaranhao2">
-                    <h2>Alberto Maranhão</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias illo rem laudantium, velit
-                        dolor
-                        ipsam error aspernatur maxime nobis harum quis, necessitatibus rerum asperiores culpa, eius esse
-                        consequatur quasi officiis.</p>
+    <div id="pgrupos">
+        <div id="grupose">
+            <img src="Grupos Imagens/1.jpg" alt="" id="imagem1" class="imagemcinza">
+            <div id="grupose2">
+                    <h2>Clowns de Shakespeare</h2>
+                    <p>Criado em 1993 em Natal, Rio Grande do Norte, o Grupo de Teatro Clowns de Shakespeare vem, desde então, desenvolvendo uma investigação com foco na construção da presença cênica do ator, a musicalidade da cena e do corpo, teatro popular e comédia, sempre sob uma perspectiva colaborativa.</p>
                     <a href="#">Mais informações...</a>
             </div>
         </div>
 
-        <div id="casadaribeira">
-            <div id="casadaribeira2">
-                <h2>Casa da Ribeira</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia non ut architecto ab! Porro,
-                    numquam temporibus totam molestias iusto eius architecto ducimus mollitia omnis eos quaerat
-                    explicabo libero laudantium vitae.</p>
-                <a href="#">Mais informações...</a>
+        <div id="grupos">
+            <div id="grupos2">
+                    <h2>Estandarte</h2>
+                    <p>Criado em 1993 em Natal, Rio Grande do Norte, o Grupo de Teatro Clowns de Shakespeare vem, desde então, desenvolvendo uma investigação com foco na construção da presença cênica do ator, a musicalidade da cena e do corpo, teatro popular e comédia, sempre sob uma perspectiva colaborativa.</p>
+                    <a href="#">Mais informações...</a>
             </div>
-            <img src="Imagens Index/pic03.jpg" alt="" id="imagem2">
+            <img src="Grupos Imagens/2.jpg" alt="" id="imagem2" class="imagemcinza">
         </div>
     </div>
 

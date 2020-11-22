@@ -1,6 +1,10 @@
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
+
+  function myFunctionGaleria() {
+    document.getElementById("myDropdownGaleria").classList.toggle("show");
+  }
   
   // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
@@ -19,4 +23,9 @@ function myFunction() {
   function tipo(t){
     console.log(localStorage.setItem("t", t.target.id));
     window.location.href="artistas.html"
+}
+
+function tipoGaleria(t){
+  console.log(localStorage.setItem("t", t.target.id));
+  window.location.href="galeria.html";
 }

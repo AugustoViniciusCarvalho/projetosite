@@ -23,7 +23,7 @@
                     <li><a onclick="myFunction()" class="dropbtn">ARTISTAS</a></li>
                     <li><a href="dramaturgia.html" accesskey="2" title="">DRAMATURGIA</a></li>
                     <li><a href="grupos.html" accesskey="3" title="">GRUPOS</a></li>
-                    <li><a href="galeria.html" accesskey="4" title="">GALERIA</a></li>
+                    <li><a onclick="myFunctionGaleria()" class="dropbtn" accesskey="4" title="">GALERIA</a></li>
                     <li><a href="teatros.html" accesskey="5" title="">TEATROS</a></li>
                     <div class="dropdown" id="dropdown">
                         <div id="myDropdown" class="dropdown-content">
@@ -34,6 +34,12 @@
                           <a href="#" onclick="tipo(event)" id="pesquisador">PESQUISADOR</a>
                           <a href="#" onclick="tipo(event)" id="produtor">PRODUTOR</a>
                         </div>
+                        <div id="myDropdownGaleria" class="dropdown-contentGaleria">
+                            <a href="#" onclick="tipoGaleria(event)" id="todos">TODOS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="teatro">TEATROS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="artista">ARTISTAS</a>
+                            <a href="#" onclick="tipoGaleria(event)" id="evento">EVENTOS</a>
+                          </div>
                       </div>
                 </ul>
             </div>
