@@ -184,6 +184,7 @@ a:hover
 {
 	position: relative;
 	padding: 5em 0em;
+	width: 100%;
 }
 
 /*********************************************************************************/
@@ -219,7 +220,6 @@ a:hover
 	position: absolute;
 	margin-top: -2%;
 	margin-left: 43%;
-	width: 570px;
 }
 
 #menu ul
@@ -281,6 +281,7 @@ a:hover
 	#banner
 {
 	padding: 10em 0em;
+	width: 100%;
 }
 
 #banner span
@@ -300,6 +301,7 @@ a:hover
 	#page
 	{
 		padding-bottom: 5em;
+		width: 100%;
 	}
 	
 	#page h2
@@ -317,6 +319,7 @@ a:hover
 {
 	overflow: hidden;
 	padding: 5em 0em;
+	width: 100%;
 }
 
 #copyright p
@@ -367,6 +370,7 @@ a:hover
 {
 	padding: 5em 0em;
 	text-align: center;
+	width: 100%;
 }
 
 /*********************************************************************************/
@@ -378,6 +382,7 @@ a:hover
 	padding: 5em 0em 5em 0em;
 	border-top: 1px solid rgba(0,0,0,.1);
 	text-align: center;
+	width: 100%;
 }
 
 ul.style3
